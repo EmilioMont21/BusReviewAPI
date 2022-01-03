@@ -1,0 +1,57 @@
+﻿@model IEnumerable<BusReviewAPI.Models.Reporte>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Usuario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Placa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Mala_Conduccion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Acoso)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nota)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Usuario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Placa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mala_Conduccion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Acoso)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nota)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ReporteId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ReporteId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ReporteId })
+        </td>
+    </tr>
+}
+
+</table>

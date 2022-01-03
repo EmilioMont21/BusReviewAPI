@@ -1,0 +1,99 @@
+﻿@model IEnumerable<BusReviewAPI.Models.Bus>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Placa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nombres_Chofer)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nombres_Asistente)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cedula_Chofer)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cedula_Asistente)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Marca)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sector)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cooperativa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Wifi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TV)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Bano)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Asientos_discapacitados)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Placa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nombres_Chofer)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nombres_Asistente)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cedula_Chofer)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cedula_Asistente)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Marca)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sector)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cooperativa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Wifi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TV)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Bano)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Asientos_discapacitados)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.BusId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.BusId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.BusId })
+        </td>
+    </tr>
+}
+
+</table>

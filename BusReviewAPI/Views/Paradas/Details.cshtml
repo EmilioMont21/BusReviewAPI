@@ -1,0 +1,58 @@
+﻿@model BusReviewAPI.Models.Parada
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Parada</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sector)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sector)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Callep)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Callep)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Calles)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Calles)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Costo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Costo)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ParadaId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

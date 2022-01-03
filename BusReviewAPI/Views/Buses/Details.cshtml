@@ -1,0 +1,114 @@
+﻿@model BusReviewAPI.Models.Bus
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Bus</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Placa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Placa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombres_Chofer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombres_Chofer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombres_Asistente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombres_Asistente)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cedula_Chofer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cedula_Chofer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cedula_Asistente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cedula_Asistente)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Marca)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Marca)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sector)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sector)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cooperativa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cooperativa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Wifi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Wifi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TV)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TV)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Bano)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bano)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Asientos_discapacitados)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Asientos_discapacitados)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.BusId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
