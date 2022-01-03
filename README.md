@@ -5,8 +5,8 @@ Proyecto P2 BusReviewAPI
 
 1.- Abrir el archivo BusReviewAPI.sln
 2.- Recompilar el proyecto para evitar errores 
-3.- Inicie la depuracion del proyecto 
+3.- Inicie la depuración del proyecto 
 
------ La apliacion Web API estara lista para enviar la informacion ------
+----- La aplicación Web API estará lista para enviar la información ------
 
 **Descargar el proyecto BusReview del repositorio : https://github.com/EmilioMont21/BusReview **
